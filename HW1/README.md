@@ -19,4 +19,4 @@ s += int(principle) + round(principle*rate/12)     #principle是浮點數，最�
 list.append([years,int(principle),round(principle*rate/12),s])
 ```
 ## 流程圖
-![流程圖]
+![流程圖](https://github.com/a1999r71732/Financial_Engineering/blob/master/HW1/hw1%E6%B5%81%E7%A8%8B%E5%9C%96.png)
