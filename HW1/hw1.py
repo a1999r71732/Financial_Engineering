@@ -17,7 +17,6 @@ s = 0
 
 for i in range(years-1):         #除了最後一期之外的本金平均攤還、利息、本利和
     s += math.ceil(c)+round(principle*rate/12)
-    
     list.append([i+1,math.ceil(c),round(principle*rate/12),s])
     principle -= math.ceil(c)
     
