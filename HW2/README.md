@@ -24,7 +24,7 @@ YTM[i]=np.irr(total_pv)
 
 ![](https://github.com/a1999r71732/Financial_Engineering/blob/master/HW2/spot.png)
 
-零息債券計算公式是price=par value/(1+y<sub>t</sub>)<sup>n</sup>
+零息債券計算公式是price=par value/(1+y<sub>t</sub>)<sup>n</sup>，所以價格除以票面價值就是unit zero coupon bond，因此套用公式:
 
 ```
 SpotRate =(pv/f)**(-1/p) - 1    #pv是bond price，f是par value，p是年數乘上一年期數
