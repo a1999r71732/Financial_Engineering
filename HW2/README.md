@@ -9,7 +9,7 @@
 ![](https://github.com/a1999r71732/Financial_Engineering/blob/master/HW2/YTM%E5%85%AC%E5%BC%8F.png)
 
 
-   從老師給的文章可知，YTM就是債券的內部報酬率，因此用numpy.irr可以計算出內部報酬率。下圖為internal return rate的計算公式
+   從老師給的文章可知，YTM就是債券的內部報酬率，因此用`numpy.irr`可以計算出內部報酬率。下圖為internal return rate的計算公式
    
    
 ![](https://github.com/a1999r71732/Financial_Engineering/blob/master/HW2/irr.jpg)
@@ -24,8 +24,10 @@ YTM[i]=np.irr(total_pv)
 
 ![](https://github.com/a1999r71732/Financial_Engineering/blob/master/HW2/spot.png)
 
+零息債券計算公式是price=par value/(1+y<sub>t</sub>)<sup>n</sup>
+
 ```
-SpotRate = math.pow(pv/f, -1/p) - 1    #pv是bond price，f是par value，p是年數乘上一年期數
+SpotRate =(pv/f)**(-1/p) - 1    #pv是bond price，f是par value，p是年數乘上一年期數
 ```
 
 3. 最後計算Forward rate
