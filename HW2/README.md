@@ -31,4 +31,4 @@ SpotRate = math.pow(pv/f, -1/p) - 1    #pv是bond price，f是par value，p是�
 3. 最後計算Forward rate
 
 ## 流程圖
-![流程圖]()
+![流程圖](https://github.com/a1999r71732/Financial_Engineering/blob/master/HW2/HW2%E6%B5%81%E7%A8%8B%E5%9C%96.png)
