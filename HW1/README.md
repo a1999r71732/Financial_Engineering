@@ -4,7 +4,7 @@
 
 ## 學習歷程
 
-1. 以前寫python都是用notepad++，這學期開始用visual studio code不太熟悉，在run的時候run不出來(可能是有程式碼有中文字串)，後來詢問同學之後解決了。  
+1. 以前寫python都是用notepad++，這學期開始用visual studio code不太熟悉，在run的時候run不出來(可能是路徑的問題)，後來詢問同學之後解決了。  
 2. 輸入本金用浮點數，跑的結果最後一期的本金和本利和會出現 .0：  
 ```
 s += principle + round(principle*rate/12)
