@@ -14,12 +14,19 @@
    
 ![](https://github.com/a1999r71732/Financial_Engineering/blob/master/HW2/irr.jpg)
 
+```
+YTM[i]=np.irr(total_pv)
+```
+
 
 2. 再計算Spotrate，利用公式:
 
 
 ![](https://github.com/a1999r71732/Financial_Engineering/blob/master/HW2/spot.png)
 
+```
+SpotRate = math.pow(pv/f, -1/p) - 1    #pv是bond price，f是par value，p是年數乘上一年期數
+```
 
 3. 最後計算Forward rate
 
