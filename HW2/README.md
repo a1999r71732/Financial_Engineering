@@ -9,7 +9,7 @@
 2. 再計算Spotrate，利用公式
 
 
-3.最後計算Forward rate
+3. 最後計算Forward rate
 
 ## 流程圖
 ![流程圖]()
