@@ -16,6 +16,8 @@
 
 
 2. 再計算Spotrate，利用公式:
+
+
 ![](https://github.com/a1999r71732/Financial_Engineering/blob/master/HW2/spot.png)
 
 
