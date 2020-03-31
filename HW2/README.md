@@ -42,14 +42,16 @@ SpotRate =(unitp)**(-1/p) - 1
 
 再來處理表格，把表格下半部用x取代。
 
-輸出結果:
+測資:
 
-*Price of  0 year:1
+```
+ Price of  0 year:1
  Price of  1 year:0.95
  Price of  2 year:0.9
  Price of  3 year:0.8
+```
 
-
+輸出結果:
 
 ```
    0       1       2       3
