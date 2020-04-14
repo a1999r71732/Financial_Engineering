@@ -2,9 +2,10 @@
   
 
 ## 學習歷程
-1.先輸入起始值
 
-2.根據老師上課的公式，先計算出在Binomial tree裡會出現的所有stock price，然後用二維陣列表示。
+#### 1.先輸入起始值
+
+#### 2.根據老師上課的公式，先計算出在Binomial tree裡會出現的所有stock price，然後用二維陣列表示。
 
 ```
 for i in range(1,n+1):               
@@ -24,7 +25,7 @@ print(stockprice)
 [540.0, 180.0, 60.0, 20.0]]
 ```
 
-3.計算每個call price，也利用老師上課的公式。
+#### 3.計算每個call price，也利用老師上課的公式。
 
 ```
 callp = [[0]*(n+1) for i in range(n+1)]
@@ -49,7 +50,7 @@ print(callp)
 [390.0, 30.0, 0, 0]]
 ```
 
-4.計算每個put price，方法跟call price一樣。
+#### 4.計算每個put price，方法跟call price一樣。
 
 ```
 putp = [[0]*(n+1) for i in range(n+1)]
@@ -71,7 +72,7 @@ print(putp)
 [0, 0.0, 22.5, 85.0], 
 [0, 0, 90.0, 130.0]]
 ```
-5.輸出最後推回的值
+#### 5.輸出最後推回的值
 
 ```
 print('call value:', callp[0][0])
