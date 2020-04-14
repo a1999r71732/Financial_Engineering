@@ -8,8 +8,8 @@ d = float(input('regress:'))
 r = float(input('rate:'))*0.01
 
 R = math.exp(r)
-p = round((R-d)/(u-d),3)
-print(p)
+p = (R-d)/(u-d)
+
 
 X = int(input('Strike Price:'))
 n = int(input('period:'))
@@ -18,7 +18,7 @@ stockprice = [[0]*(n+1) for i in range(n+1)]
 
 stockprice[0][0] = S
 
-for i in range(1,n+1):
+for i in range(1,n+1):                #紀錄stock price
     for j in range(n+1):
         if i == j:
             stockprice[i][j]=stockprice[i-1][j-1]*d
@@ -28,7 +28,7 @@ for i in range(1,n+1):
 
 callp = [[0]*(n+1) for i in range(n+1)]
 
-for i in range(0,n+1):
+for i in range(0,n+1):             #算出每一層的call price
     if stockprice[n][i]-X  >0:
         callp[n][i]=stockprice[n][i]-X
 
@@ -40,7 +40,7 @@ callp[0][1]=0
 
 putp = [[0]*(n+1) for i in range(n+1)]
 
-for i in range(0,n+1):
+for i in range(0,n+1):            #算出每一層的put price
     if X-stockprice[n][i]  >0:
         putp[n][i]=X-stockprice[n][i]
 
