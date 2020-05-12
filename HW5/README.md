@@ -6,6 +6,20 @@
 #### 1.先輸入起始值
 
 ```
+sigma = float(input("sigma:"))
+a = float(input("a:"))
+timestep = int(input("timestep:"))
+T = int(input("length(year):")) # in years
+forward_rate = float(input("forward rate(%):"))*0.01
+
+S0 = float(input("current stock price:"))
+K = float(input("exercise price:"))
+r = float(input("risk-free interest rate(%):"))*0.01
+```
+
+測資:
+
+```
 sigma=0.1
 a=0.2
 timestep:1200
@@ -14,7 +28,6 @@ forward rate(%):3
 current stock price:100
 exercise price:105
 risk-free interest rate(%):1
-
 ```
 
 #### 2.套入QuantLib套件，模擬short rate
@@ -75,7 +88,6 @@ for i in range(0,num_paths):
 
 plt.title("GBM for Stock price")
 plt.show()
-
 ```
 
 輸出結果:
